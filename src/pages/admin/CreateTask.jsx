@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import DashboardLayout from "@/components/DashBoardLayout";
+import DashboardLayout from "../components/DashBoardLayout";
 import { useLocation, useNavigate } from "react-router-dom";
-import { API_PATHS } from "@/utilities/apiPaths";
-import { PRIORITY_DATA } from "@/utilities/data";
-import axiosInstance from "@/utilities/axiosInstance";
+import { API_PATHS } from "../utilities/apiPaths";
+import { PRIORITY_DATA } from "../utilities/data";
+import axiosInstance from "../utilities/axiosInstance";
 import toast from "react-hot-toast";
 import moment from "moment";
-import SelectDropdown from "@/components/inputs/SelectDropdown";
-import SelectUsers from "@/components/inputs/SelectUsers";
-import CheckListInput from "@/components/inputs/CheckListInput";
-import AddAttachmentsInput from "@/components/inputs/AddAttachmentsInput";
-import Modal from "@/components/Modal";
-import RemoveAlert from "@/components/RemoveAlert";
+import SelectDropdown from "../components/inputs/SelectDropdown";
+import SelectUsers from "../components/inputs/SelectUsers";
+import CheckListInput from "../components/inputs/CheckListInput";
+import AddAttachmentsInput from "../components/inputs/AddAttachmentsInput";
+import Modal from "../components/Modal";
+import RemoveAlert from "../components/RemoveAlert";
 
 const CreateTask = () => {
   const location = useLocation();

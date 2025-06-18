@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import { useUserAuth } from "@/hooks/useUserAuth";
+import { useUserAuth } from "../hooks/useUserAuth";
 import { useContext } from "react";
-import { userContext } from "@/context/userContext";
-import DashboardLayout from "@/components/DashBoardLayout";
+import { userContext } from "../context/userContext";
+import DashboardLayout from "../components/DashBoardLayout";
 import { useNavigate } from "react-router-dom";
-import axiosInstance from "@/utilities/axiosInstance";
-import { API_PATHS } from "@/utilities/apiPaths";
+import axiosInstance from "../utilities/axiosInstance";
+import { API_PATHS } from "../utilities/apiPaths";
 import moment from "moment";
-import { addSeparator } from "@/utilities/helper";
-import InfoCard from "@/components/Cards/InfoCard";
+import { addSeparator } from "../utilities/helper";
+import InfoCard from "../components/Cards/InfoCard";
 import { LuArrowRight } from "react-icons/lu";
-import TasksTable from "@/components/TasksTable";
-import CustomPieChart from "@/components/Charts/CustomPieChart";
-import CustomBarChart from "@/components/charts/CustomBarChart";
+import TasksTable from "../components/TasksTable";
+import CustomPieChart from "../components/Charts/CustomPieChart";
+import CustomBarChart from "../components/charts/CustomBarChart";
 
 const COLORS = ["#ec8507", "#f1cb31", "#0b590b"];
 
