@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axiosInstance from "../../utilities/axiosInstance";
 import { API_PATHS } from "../../utilities/apiPaths";
-import DashboardLayout from "../../components/layouts/DashboardLayout";
+import MainLayout from "../../components/layouts/MainLayout";
 import moment from "moment";
 
 import InfoBox from "../../components/InfoBox";
@@ -81,7 +81,7 @@ const UserTaskDetails = () => {
     return () => {};
   }, [id]);
   return (
-    <DashboardLayout activeMenu="My Tasks">
+    <MainLayout activeMenu="My Tasks">
       <div className="mt-5">
         {task && (
           <div className="grid grid-cols-1 md:grid-cols-3 mt-4">
@@ -155,7 +155,7 @@ const UserTaskDetails = () => {
           </div>
         )}
       </div>
-    </DashboardLayout>
+    </MainLayout>
   );
 };
 

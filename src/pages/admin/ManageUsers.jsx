@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axiosInstance from "../../utilities/axiosInstance";
 import { API_PATHS } from "../../utilities/apiPaths";
-import DashboardLayout from "../../components/layouts/DashBoardLayout";
+import MainLayout from "../../components/layouts/MainLayout";
 import UserCard from "../../components/Cards/UserCard";
 
 const ManageUsers = () => {
@@ -26,7 +26,7 @@ const ManageUsers = () => {
   }, []);
 
   return (
-    <DashboardLayout activeMenu="Manage Users">
+    <MainLayout activeMenu="Manage Users">
       <div className="mt-5 mb-10">
         <div className="flex md:flex-row md:items-center justify-between">
           <h2 className="text-xl md:text-xl text-green-800 font-medium">
@@ -40,7 +40,7 @@ const ManageUsers = () => {
           ))}
         </div>
       </div>
-    </DashboardLayout>
+    </MainLayout>
   );
 };
 

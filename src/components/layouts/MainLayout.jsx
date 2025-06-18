@@ -3,7 +3,7 @@ import { userContext } from "../../context/userContext";
 import Navbar from "./Navbar";
 import SideMenu from "./SideMenu";
 
-const DashboardLayout = ({ children, activeMenu }) => {
+const MainLayout = ({ children, activeMenu }) => {
   const { user } = useContext(userContext);
 
   return (
@@ -23,4 +23,4 @@ const DashboardLayout = ({ children, activeMenu }) => {
   );
 };
 
-export default DashboardLayout;
+export default MainLayout;

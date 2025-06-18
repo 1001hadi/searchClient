@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DashboardLayout from "../../components/layouts/DashboardLayout";
+import MainLayout from "../../components/layouts/MainLayout";
 import { useLocation, useNavigate } from "react-router-dom";
 import { API_PATHS } from "../../utilities/apiPaths";
 import { PRIORITY_DATA } from "../../utilities/data";
@@ -193,7 +193,7 @@ const CreateTask = () => {
   }, [taskId]);
 
   return (
-    <DashboardLayout activeMenu="Create Task">
+    <MainLayout activeMenu="Create Task">
       <div className="mt-5">
         <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
           <div className="form-card col-span-6">
@@ -328,7 +328,7 @@ const CreateTask = () => {
           onRemove={() => handleRemoveTask()}
         />
       </Modal>
-    </DashboardLayout>
+    </MainLayout>
   );
 };
 
