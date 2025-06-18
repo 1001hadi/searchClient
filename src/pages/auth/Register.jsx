@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
-import AuthLayout from "../components/layouts/AuthLayout";
-import { validateEmail } from "../utilities/helper";
-import AddProfileImg from "../components/inputs/AddProfileImg";
-import Input from "../components/inputs/Input";
+import AuthLayout from "../../components/layouts/AuthLayout";
+import { validateEmail } from "../../utilities/helper";
+import AddProfileImg from "../../components/Inputs/AddProfileImg";
+import Input from "../../components/Inputs/Input";
 import { Link, useNavigate } from "react-router-dom";
-import axiosInstance from "../utilities/axiosInstance";
-import { API_PATHS } from "../utilities/apiPaths";
-import { userContext } from "../context/userContext";
-import uploadImage from "../utilities/imageUpload";
+import axiosInstance from "../../utilities/axiosInstance";
+import { API_PATHS } from "../../utilities/apiPaths";
+import { userContext } from "../../context/userContext";
+import uploadImage from "../../utilities/imageUpload";
 
 const Register = () => {
   const [profileImage, setProfileImage] = useState(null);

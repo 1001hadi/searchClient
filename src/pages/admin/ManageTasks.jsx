@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import DashboardLayout from "../components/DashBoardLayout";
-import axiosInstance from "../utilities/axiosInstance";
-import { API_PATHS } from "../utilities/apiPaths";
+import DashboardLayout from "../../components/layouts/DashBoardLayout";
+import axiosInstance from "../../utilities/axiosInstance";
+import { API_PATHS } from "../../utilities/apiPaths";
 import { useNavigate } from "react-router-dom";
-import TaskStatusTab from "../components/TaskStatusTab";
-import TaskCard from "../components/cards/TaskCard";
+import TaskStatusTab from "../../components/TaskStatusTab";
+import TaskCard from "../../components/Cards/TaskCard";
 
 const ManageTasks = () => {
   const [allTasks, setAllTasks] = useState([]);

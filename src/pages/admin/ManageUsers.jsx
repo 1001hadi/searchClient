@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import axiosInstance from "../utilities/axiosInstance";
-import { API_PATHS } from "../utilities/apiPaths";
-import DashboardLayout from "../components/DashBoardLayout";
-import UserCard from "../components/cards/UserCard";
+import axiosInstance from "../../utilities/axiosInstance";
+import { API_PATHS } from "../../utilities/apiPaths";
+import DashboardLayout from "../../components/layouts/DashBoardLayout";
+import UserCard from "../../components/Cards/UserCard";
 
 const ManageUsers = () => {
   const [allUsers, setAllUsers] = useState([]);

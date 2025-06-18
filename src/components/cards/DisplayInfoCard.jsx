@@ -8,7 +8,7 @@ const DisplayInfoCard = ({ label, value, color }) => {
       <p className="text-xs md:text-[14px] text-gray-500">
         <span className="text-sm md:text-[15px] text-black font-semibold">
           {value}
-        </span>{" "}
+        </span>
         {label}
       </p>
     </div>
