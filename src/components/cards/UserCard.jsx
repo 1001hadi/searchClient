@@ -1,5 +1,5 @@
 import React from "react";
-import UserStatusInfoCard from "../UserStatusInfoCard";
+import UserStatusInfoCard from "./UserStatusInfoCard";
 const UserCard = ({ userInfo }) => {
   return (
     <div className="user-card p-2 cursor-pointer">
