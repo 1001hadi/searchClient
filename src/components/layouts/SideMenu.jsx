@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { SIDE_MENU_DATA, SIDE_MENU_USER_DATA } from "../../utilities/data";
-import { userContext } from "../../context/userContext";
+import { SIDE_MENU_DATA, SIDE_MENU_USER_DATA } from "@/utilities/data";
+import { userContext } from "@/context/userContext";
 
 const SideMenu = ({ activeMenu }) => {
   const { user, clearUser } = useContext(userContext);
