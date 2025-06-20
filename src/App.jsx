@@ -23,7 +23,7 @@ function App() {
   return (
     <UserProvider>
       <div>
-        <Router>
+        <Router basename="/searchClient">
           <Routes>
             {/* authentication routes */}
             <Route path="/login" element={<Login />} />
